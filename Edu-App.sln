@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Edu.Services", "1-Edu.Services", "{CCE19F26-28E3-4D11-9D09-5D2ECB1F4C5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Edu.Security", "2-Edu.Security", "{839FC4E6-F1C1-441B-914D-166ED5031469}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Edu.DAL", "4-Edu.DAL", "{9D6C2789-7914-4F92-B786-67A725A1C397}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Edu.BLL", "3-Edu.BLL", "{C93147A7-AAFC-4EB8-8ADE-E506BF9B1AD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Edu.Shared", "5-Edu.Shared", "{CFEE6D41-6542-48AB-AF57-88D85BB2A8B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edu.Security", "2-Edu.Security\Edu.Security.csproj", "{8BFF1454-3BF6-4C1F-AEAE-1B8356609C77}"
+	ProjectSection(ProjectDependencies) = postProject
+		{78BF3ACE-9D45-4199-B3D1-76D106A81C62} = {78BF3ACE-9D45-4199-B3D1-76D106A81C62}
+		{841CE411-9945-4B4D-9A75-24483E5AEC0D} = {841CE411-9945-4B4D-9A75-24483E5AEC0D}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edu.BLL", "3-Edu.Business\Edu.BLL.csproj", "{841CE411-9945-4B4D-9A75-24483E5AEC0D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{78BF3ACE-9D45-4199-B3D1-76D106A81C62} = {78BF3ACE-9D45-4199-B3D1-76D106A81C62}
+		{78DF03FF-2A5C-49D9-87C6-1EB150D1438E} = {78DF03FF-2A5C-49D9-87C6-1EB150D1438E}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edu.DAL", "4-Edu.DataAccess\Edu.DAL.csproj", "{78DF03FF-2A5C-49D9-87C6-1EB150D1438E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{78BF3ACE-9D45-4199-B3D1-76D106A81C62} = {78BF3ACE-9D45-4199-B3D1-76D106A81C62}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edu.Shared", "5-Edu.Shared\Edu.Shared.csproj", "{78BF3ACE-9D45-4199-B3D1-76D106A81C62}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edu.Services", "1-Edu.Services\Edu.Services.csproj", "{5383303E-0093-4096-B67B-F50483F8C149}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BFF1454-3BF6-4C1F-AEAE-1B8356609C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BFF1454-3BF6-4C1F-AEAE-1B8356609C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BFF1454-3BF6-4C1F-AEAE-1B8356609C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BFF1454-3BF6-4C1F-AEAE-1B8356609C77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841CE411-9945-4B4D-9A75-24483E5AEC0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841CE411-9945-4B4D-9A75-24483E5AEC0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841CE411-9945-4B4D-9A75-24483E5AEC0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841CE411-9945-4B4D-9A75-24483E5AEC0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78DF03FF-2A5C-49D9-87C6-1EB150D1438E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78DF03FF-2A5C-49D9-87C6-1EB150D1438E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78DF03FF-2A5C-49D9-87C6-1EB150D1438E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78DF03FF-2A5C-49D9-87C6-1EB150D1438E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78BF3ACE-9D45-4199-B3D1-76D106A81C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78BF3ACE-9D45-4199-B3D1-76D106A81C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78BF3ACE-9D45-4199-B3D1-76D106A81C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78BF3ACE-9D45-4199-B3D1-76D106A81C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5383303E-0093-4096-B67B-F50483F8C149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5383303E-0093-4096-B67B-F50483F8C149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5383303E-0093-4096-B67B-F50483F8C149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5383303E-0093-4096-B67B-F50483F8C149}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BFF1454-3BF6-4C1F-AEAE-1B8356609C77} = {839FC4E6-F1C1-441B-914D-166ED5031469}
+		{841CE411-9945-4B4D-9A75-24483E5AEC0D} = {C93147A7-AAFC-4EB8-8ADE-E506BF9B1AD1}
+		{78DF03FF-2A5C-49D9-87C6-1EB150D1438E} = {9D6C2789-7914-4F92-B786-67A725A1C397}
+		{78BF3ACE-9D45-4199-B3D1-76D106A81C62} = {CFEE6D41-6542-48AB-AF57-88D85BB2A8B1}
+		{5383303E-0093-4096-B67B-F50483F8C149} = {CCE19F26-28E3-4D11-9D09-5D2ECB1F4C5E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C9A2DDF-9B3C-439A-9B6C-53D2CA0AE227}
+	EndGlobalSection
+EndGlobal

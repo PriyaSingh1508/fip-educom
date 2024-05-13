@@ -1,0 +1,12 @@
+.vs/
+1-Edu.Services/bin/
+1-Edu.Services/obj/
+2-Edu.Security/bin/
+2-Edu.Security/obj/*
+3-Edu.Business/bin/*
+3-Edu.Business/obj/
+4-Edu.DataAccess/bin/
+4-Edu.DataAccess/obj/
+5-Edu.Shared/bin/
+5-Edu.Shared/obj/
+OutputBins/*

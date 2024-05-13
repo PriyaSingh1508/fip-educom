@@ -1,0 +1,13 @@
+{
+<<<<<<< HEAD
+  "dependencies": {},
+=======
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2024-04-02T12:16:53.9112461Z"
+    }
+  },
+>>>>>>> 965864aa4c1607d3eb2940e92976dba77e15274e
+  "parameters": {}
+}
