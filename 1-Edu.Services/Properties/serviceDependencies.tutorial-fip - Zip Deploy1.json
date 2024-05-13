@@ -1,0 +1,15 @@
+{
+<<<<<<< HEAD
+  "dependencies": {}
+=======
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "",
+      "secretStore": "AzureAppSettings",
+      "type": "mssql.onprem",
+      "connectionId": "ConnectionStrings:DefaultConnection",
+      "dynamicId": null
+    }
+  }
+>>>>>>> 965864aa4c1607d3eb2940e92976dba77e15274e
+}
