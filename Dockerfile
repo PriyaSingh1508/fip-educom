@@ -12,14 +12,14 @@ COPY ["1-Edu.Services/Edu.Services.csproj", "1-Edu.Services/"]
 RUN dotnet restore "1-Edu.Services/Edu.Services.csproj"
 COPY . .
 WORKDIR "/src/1-Edu.Services"
-RUN dotnet build "Edu.Services.csproj" -c Release -o /app/build
+RUN dotnet build "1-Edu.Services/Edu.Services.csproj" -c Release -o /app/build
 
 # Run the postbuild.sh script
 COPY ["postbuild.sh","/app/postbuild.sh"]
 RUN chmod +x "/app/postbuild.sh"
 RUN /app/postbuild.sh
 FROM build AS publish
-RUN dotnet publish "Edu.Services.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "1-Edu.Services/Edu.Services.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
