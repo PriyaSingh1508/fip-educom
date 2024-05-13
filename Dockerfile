@@ -10,8 +10,9 @@ WORKDIR /src
 
 COPY ["1-Edu.Services/Edu.Services.csproj", "1-Edu.Services/"]
 RUN dotnet restore "1-Edu.Services/Edu.Services.csproj"
-COPY . .
+
 WORKDIR "/src/1-Edu.Services"
+COPY . .
 RUN dotnet build "Edu.Services.csproj" -c Release -o /app/build
 
 # Run the postbuild.sh script
