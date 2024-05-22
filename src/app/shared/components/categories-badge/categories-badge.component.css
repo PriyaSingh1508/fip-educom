@@ -1,0 +1,13 @@
+.category-badge{
+    padding:0.5em;
+    margin: 1em;
+    margin-left: 0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.category-icon{
+    background-color: #111;
+    border-radius: 8px;
+    padding: 2em;
+    margin: 0.25em;
+}

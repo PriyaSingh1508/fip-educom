@@ -1,0 +1,18 @@
+footer{
+    background-color: rgb(6,20,28);
+    
+}
+i{
+    font-size:medium;
+}
+i:hover{
+    color:green;
+}
+section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.src{
+    width:100px;
+    height:100px;
+}

@@ -1,0 +1,23 @@
+<div class="card">
+    
+    <div class="card-body">
+        <img src="{{imageUrl}}" class="card-img" alt="...">
+        <h5 class="card-title">{{title}}</h5>
+        <div class="row pt-3">
+            <p class="col card-text ">{{provider}}</p>
+        <p class="col card-text" *ngIf="isEbook">{{author}}</p>
+        </div>
+        <p class="card-text" *ngIf="isCourse; else notACourse"><span class="fw-bold">{{numberOfLectures}}</span> Lectures</p>
+        <ng-template #notACourse><span class="fw-bold">{{numberOfCourses}}</span> Courses | <span class="fw-bold">{{numberOfBooks}}</span> eBooks </ng-template>
+        <hr style="opacity: 0.2;"/>
+        <div class="d-flex justify-content-around " *ngIf="isFree; else notFree">
+            <a  href="#" class="btn btn-lg px-4 py-1 text-white w-100 "><i class="fa-solid fa-bag-shopping px-1 "></i>Explore Now</a>
+        </div>
+        <ng-template #notFree>
+            <div class="d-flex justify-content-around " >
+                <a href="#" class="btn btn-lg px-4 py-1 text-white"><i class="fa-solid fa-bag-shopping px-1 "></i>Buy Now</a>
+                <a href="#" class="btn btn-lg px-4 py-1 text-white"><i class="fa-solid fa-cart-shopping px-1"></i></a>
+            </div>
+        </ng-template>
+    </div>
+  </div>

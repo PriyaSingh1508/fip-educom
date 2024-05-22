@@ -1,0 +1,23 @@
+<div class="mx-4 tutorial-body">
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <app-tutorial-list [tutorial]="tutorial"  (itemDetailsEmitter)="updateBlogContent($event)" ></app-tutorial-list>
+        </div>
+        <div class="col-md-6 tutorial-content shadow-lg">
+             <div class="container">
+                <div class="text-center fs-1 p-2">{{item?.topic}}</div>
+                <hr>
+                <div class="row py-5"></div>
+                <hr>
+                <div class="d-flex justify-content-between ">
+                    <button class="btn btn-lg btn-secondary  " [disabled]="!showPreviousButton" (click)="navigate('previous')"><i class="fa-solid fa-angle-left px-1"></i>Previous</button>
+                    <button class="btn btn-lg btn-secondary" [disabled]="!showNextButton" (click)="navigate('next')">Next<i class="fa-solid fa-angle-right px-1"></i></button>
+                </div>
+                <!-- <div [innerHTML]="item?.description" class="p-2 fs-4 py-4"></div> -->
+                <div [innerHTML]="sanitizeHtml(item?.description)" class="p-2 fs-4 py-4"></div>
+
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>

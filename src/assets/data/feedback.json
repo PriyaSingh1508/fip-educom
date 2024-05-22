@@ -1,0 +1,28 @@
+[{
+    "feedbackId":1,
+    "name":"Pranav Singh",
+    "course":"Java",
+    "feedback":"I recently took the Tutorials Point Java Course and I am so glad I did! The course was incredibly informative and provided me with a comprehensive understanding of the Java language. The instructor was knowledgeable and patient, and the course was easy to follow. I highly recommend this course to anyone looking to learn Java! "
+},{
+    "feedbackId":2,
+    "name":"Sukhdeep Singh",
+    "course":"Java",
+    "feedback":"Tutorials Point has provided me with the tools and resources I need to achieve my goals and learn new skills. I have been able to apply what I have learned to my own projects and saw a great improvement in my coding skills. I highly recommend Tutorials Point for anyone looking to learn Java coding."
+},{
+    "feedbackId":3,
+    "name":"Lavanya Trivedi",
+    "course":"Python",
+    "feedback":"As a Data Analyst, I needed to enhance my skills to automate tasks and streamline data processing. This Python course provided me with the tools I needed. Learning how to manipulate data, create visualizations, and interact with APIs has transformed the way I work. I now save hours of manual effort by writing Python scripts."
+},
+{
+    "feedbackId":4,
+    "name":"Supriya Hussian",
+    "course":"Python",
+    "feedback":"This course taught me Python, which gave me the knowledge I needed to create and prototype the minimal viable product (MVP) for my startup. I was able to develop a working prototype that won the approval of possible investors thanks to the practical emphasis on creating applications from the start and advice on best practices."
+},{
+    "feedbackId":5,
+    "name":"Naveen Boyina",
+    "course":"AI&ML",
+    "feedback":"Data analysis to AI conversion needed a thorough understanding of machine learning methods. My expectations were exceeded by this AIML course. The extensive curriculum, combined with real-world assignments and case studies, increased my repertoire of data-driven strategies."
+}
+]

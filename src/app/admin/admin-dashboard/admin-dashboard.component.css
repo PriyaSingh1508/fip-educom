@@ -1,0 +1,32 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .example-container {
+    width: 100vw;
+    height: 90vh;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .nav-link.active {
+    font-weight: 700;
+    opacity: 1;
+    border-bottom-color: #04af2f;
+    color: #111;
+    transition: none;
+  }
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+  .selected {
+    background-color: #2c9d30;
+    color: white !important; 
+  }
+
+  

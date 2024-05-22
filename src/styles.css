@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+.mat-drawer{
+    width: 250px;
+    height: 90vh;
+}
+.content-bg-list{
+    background-color:rgb(255,237,224);
+    border-radius: 5px;
+}
+
+.content-bg-example{
+    background-color:rgb(238,238,238);
+    border:1px solid rgb(238,238,238);
+    border-radius: 5px;
+}
+
+.content-bg-code{
+    background-color:rgb(45,45,45);
+    border:1px solid rgb(45,45,45);
+    border-radius: 5px;
+    color: white;
+}
+
+
+.content-th{
+    text-align: center;
+    background-color: #e3f3cf !important;
+    color:black;
+}
+.td a {
+    color: green;
+  }

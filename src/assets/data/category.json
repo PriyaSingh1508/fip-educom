@@ -1,0 +1,33 @@
+[
+    {
+        "id":1,
+        "name":"Python Technologies",
+        "imageUrl":"https://www.tutorialspoint.com/images/python_icon.svg",
+        "link":"#"
+    },{
+        "id":2,
+        "name":"Java Technologies",
+        "imageUrl":"https://www.tutorialspoint.com/images/python_icon.svg",
+        "link":"#"
+    },{
+        "id":3,
+        "name":"Dotnet Technologies",
+        "imageUrl":"https://www.tutorialspoint.com/images/python_icon.svg",
+        "link":"#"
+    },{
+        "id":4,
+        "name":"Dotnet Core Technologies",
+        "imageUrl":"https://www.tutorialspoint.com/images/python_icon.svg",
+        "link":"#"
+    },{
+        "id":5,
+        "name":"C Technologies",
+        "imageUrl":"https://www.tutorialspoint.com/images/python_icon.svg",
+        "link":"#"
+    },{
+        "id":6,
+        "name":"AWS Technologies",
+        "imageUrl":"https://www.tutorialspoint.com/images/python_icon.svg",
+        "link":"#"
+    }
+]

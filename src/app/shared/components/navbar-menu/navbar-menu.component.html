@@ -1,0 +1,13 @@
+<div class="scrollable-menu">
+    <div class="row">
+    <div class=" col-md-2 col-lg-2 scroll-arrows left-arrow menu-item" (click)="scrollMenu(-50)"><i class="fa-solid fa-angle-left"></i></div>
+
+    <div class="col-md-8 col-lg-8 mx-5 px-2">
+    <a  class="menu-item text-decoration-none"  (click)="getTechnologyById(item.id,item.technologyName)" [class.selected]="selectedMenu === item.technologyName" *ngFor="let item of tutorials">{{item.technologyName}}</a>
+    
+    
+</div>
+    
+    <div class=" col-md-2 col-lg-2 scroll-arrows right-arrow menu-item" (click)="scrollMenu(50)"><i class="fa-solid fa-angle-right"></i></div>
+</div>
+</div>

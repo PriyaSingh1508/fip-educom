@@ -1,0 +1,22 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" [opened]="true">
+        <img src="https://www.tutorialspoint.com/market/public/assets/images/logo-w.png?v=0.2" style="width:240px;height:45px;margin-left: 2px;margin-bottom: 2px;
+        ">  
+        
+     <ul class="navbar-nav flex-column custom-scrollbar">
+        
+        <li class="nav-link list-group-item-action"><a routerLink ="/teacher/layout" routerLinkActive="active-link">Dashboard</a></li>
+        <li class="nav-link"><a routerLink ="">Courses</a></li>
+        <li class="nav-link"><a routerLink ="">Enrolled Students</a></li>
+     </ul>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+  
+ <router-outlet></router-outlet>
+      
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+ 
+  

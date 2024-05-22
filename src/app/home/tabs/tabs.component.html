@@ -1,0 +1,109 @@
+
+<div class="d-flex justify-content-center">
+    <div class="tabs_heading">
+        Start <span class="tabs_heading_sub">Learning!</span>
+    </div>
+</div>
+<div class="d-flex justify-content-center mb-3 mt-2">
+   <span>Explore our categorical content and empower your knowledge</span>
+</div>
+<div class="d-flex justify-content-center mt-4">
+   
+    <ul class="nav">
+      <li class="nav-item" (click)="selectTab('library')">
+        <a class="nav-link" [class.active]="selectedTab === 'library'" [class.focus]="selectedTab === 'library'"><i class="fa-solid fa-book"></i>Library</a>
+      </li>
+      <li class="nav-item" (click)="selectTab('certifications')">
+        <a class="nav-link" [class.active]="selectedTab === 'certifications'" [class.focus]="selectedTab === 'certifications'"><i class="fa-solid fa-certificate"></i>Certifications</a>
+      </li>
+      <li class="nav-item" (click)="selectTab('courses')">
+        <a class="nav-link" [class.active]="selectedTab === 'courses'" [class.focus]="selectedTab === 'courses'"><i class="fa-brands fa-square-youtube"></i> Courses</a>
+      </li>
+      <li class="nav-item" (click)="selectTab('ebooks')">
+        <a class="nav-link" [class.active]="selectedTab === 'ebooks'" [class.focus]="selectedTab === 'ebooks'"><i class="fa-solid fa-book"></i> Ebooks</a>
+      </li>
+      <li class="nav-item" (click)="selectTab('freeCourses')">
+        <a class="nav-link" [class.active]="selectedTab === 'freeCourses'" [class.focus]="selectedTab === 'freeCourses'"><i class="fa-brands fa-square-youtube"></i> Free Courses</a>
+      </li>
+    </ul>
+    
+</div>
+
+<div class="d-flex justify-content-center ">
+    <div class="tab-content-border">
+    <div class="tab-content mt-3">
+        <div *ngIf="selectedTab === 'library'" class="tab-pane fade show active">
+          
+          <p class="tab-content-para">Join our millions of loyal visitors to access our free Text Library. From programming languages and web development to data science and cybersecurity, our
+             masterfully crafted Tutorials will help you master any technology or concept from scratch.</p>
+            <button class="btn btn-lg "> Explore Now</button>
+
+            <div class="mt-4 mb-2 swiper" >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"> <div class="d-flex gap-4"><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon></div></div>
+                <div class="swiper-slide"> <div class="d-flex gap-4"><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon></div></div>
+                <div class="swiper-slide"> <div class="d-flex gap-4"><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon></div></div>
+                <div class="swiper-slide"> <div class="d-flex gap-4"><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon><app-menu-icon></app-menu-icon></div></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div *ngIf="selectedTab === 'certifications'" class="tab-pane fade show active">
+          <p class="tab-content-para">Accelerate your learning journey with our exclusive online certification programs. The comprehensive collection is the curation of high-quality courses into bundles, offering in-depth knowledge and hands-on practice in prime technologies of the industry.</p>
+          <button class="btn btn-lg "> Explore</button>
+          <div class="scrollable-list">
+            <div class="card-deck">
+
+              <app-course-card></app-course-card>
+              <app-course-card></app-course-card>
+              <app-course-card></app-course-card>
+              <app-course-card></app-course-card>
+              <app-course-card></app-course-card>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="selectedTab === 'courses'" class="tab-pane fade show active">
+            <p class="tab-content-para">Take advantage of our 8000+ Video Courses to unlock your full potential. Ranging across prominent categories, our video courses designed by industry experts can help level up your skills and achieve goals faster.</p>
+            <button class="btn btn-lg "> Explore</button>
+            <div class="scrollable-list">
+              <div class="card-deck">
+  
+                <app-course-card [isCourse]="true"></app-course-card>
+                <app-course-card [isCourse]="true"></app-course-card>
+                <app-course-card [isCourse]="true"></app-course-card>
+                <app-course-card [isCourse]="true"></app-course-card>
+              </div>
+            </div>
+          </div>
+        <div *ngIf="selectedTab === 'ebooks'" class="tab-pane fade show active">
+          <p class="tab-content-para">Enhance your learning experience with our expansive collection of eBooks. Dive deep into the minds of scholars from various industries with their distinguished content. Use interactive and engaging eBooks to your advantage.</p>
+          <button class="btn btn-lg "> Explore</button>
+          <div class="scrollable-list">
+            <div class="card-deck">
+
+              <app-course-card [isEbook]="true"></app-course-card>
+              <app-course-card [isEbook]="true"></app-course-card>
+              <app-course-card [isEbook]="true"></app-course-card>
+              <app-course-card [isEbook]="true"></app-course-card>
+            </div>
+          </div>
+        </div>
+        
+        <div *ngIf="selectedTab === 'freeCourses'" class="tab-pane fade show active">
+            <p class="tab-content-para">Leverage the opportunity to learn for free from our experts. Explore these courses to unlock your potential. Level up your skills to the industry standards.</p>
+            <button class="btn btn-lg "> Explore</button>
+            <div class="scrollable-list">
+              <div class="card-deck">
+  
+                <app-course-card [isCourse]="true" [isFree]="true"></app-course-card>
+                <app-course-card [isCourse]="true" [isFree]="true"></app-course-card>
+                <app-course-card [isCourse]="true" [isFree]="true"></app-course-card>
+                <app-course-card [isCourse]="true" [isFree]="true"></app-course-card>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

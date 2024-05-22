@@ -1,0 +1,15 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+.home_stats{
+background-color: #111;
+color: white;
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+width: 95%;
+margin: 40px auto;
+border-radius: 10px;
+padding:40px 20px;
+
+}

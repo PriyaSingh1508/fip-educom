@@ -1,0 +1,48 @@
+<div>
+<mat-toolbar style="background-color: #2c9d30; color: white;">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Admin Dashboard</span>
+      <span class="example-spacer"></span>
+      <!-- <button mat-button class="example-icon favorite-icon" (click)="logout()" aria-label="Example icon-button with heart icon">
+        Logout
+      </button> -->
+</mat-toolbar>
+
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+
+        <mat-list role="list">
+            <mat-list-item role="listitem" (click)="selectMenu('addTechnology')" [class.selected]="selectedMenu === 'addTechnology'">Add Technology</mat-list-item>
+            <mat-list-item role="listitem" (click)="selectMenu('addTutorial')" [class.selected]="selectedMenu === 'addTutorial'">Add Tutorials</mat-list-item>
+            <mat-list-item role="listitem" (click)="selectMenu('addCategory')" [class.selected]="selectedMenu === 'addCategory'">Add Category</mat-list-item>
+            <mat-list-item role="listitem" (click)="selectMenu('viewTutorials')" [class.selected]="selectedMenu === 'viewTutorials'">View Tutorials</mat-list-item>
+            <mat-list-item role="listitem" (click)="selectMenu('addCertifications')" [class.selected]="selectedMenu === 'addCertifications'">Add Certifications</mat-list-item>
+        </mat-list>
+
+      
+    </mat-drawer>
+    <div class="container-fluid">
+        <div class="row" *ngIf="selectedMenu === 'addTutorial'">
+        <app-add-tutorial></app-add-tutorial>
+        </div>
+        <div class="row" *ngIf="selectedMenu === 'addCategory'">
+          <app-add-category></app-add-category>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" *ngIf="selectedMenu === 'addTechnology'">
+            <app-add-technology></app-add-technology>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" *ngIf="selectedMenu === 'viewTutorials'">
+            <app-view-tutorial></app-view-tutorial>
+        </div>
+    </div>
+   
+  
+  </mat-drawer-container>
+</div>

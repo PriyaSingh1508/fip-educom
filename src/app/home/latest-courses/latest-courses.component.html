@@ -1,0 +1,75 @@
+<div class="courses">
+    <div class="d-flex justify-content-between align-items-center ">
+
+            <div class="tabs_heading">
+                Latest <span class="tabs_heading_sub">Courses</span>
+            </div>
+
+        <div class="">
+          <div class="btn btn-lg ">See All</div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-start mx-5 mt-4">
+   
+        <ul class="nav">
+          <li class="nav-item" (click)="selectTab('mostpopular')">
+            <a class="nav-link" [class.active]="selectedTab === 'mostpopular'" [class.focus]="selectedTab === 'mostpopular'">Most Popular</a>
+          </li>
+          <li class="nav-item" (click)="selectTab('featured')">
+            <a class="nav-link" [class.active]="selectedTab === 'featured'" [class.focus]="selectedTab === 'featured'">Featured</a>
+          </li>
+          <li class="nav-item" (click)="selectTab('bestseller')">
+            <a class="nav-link" [class.active]="selectedTab === 'bestseller'" [class.focus]="selectedTab === 'bestseller'">Best Seller</a>
+          </li>
+        </ul>
+        
+    </div>
+
+    <div class="d-flex justify-content-center tab-head">
+        <div class="tab-content-border">
+        <div class="tab-content mt-3">
+
+            <div *ngIf="selectedTab === 'mostpopular'" class="tab-pane fade show active">
+              
+              <div class="scrollable-list">
+                <div class="card-deck">
+    
+                  <app-course-card></app-course-card>
+                  <app-course-card></app-course-card>
+                  <app-course-card></app-course-card>
+                  <app-course-card></app-course-card>
+                  <app-course-card></app-course-card>
+                </div>
+              </div>
+            </div>
+            <div *ngIf="selectedTab === 'featured'" class="tab-pane fade show active">
+               
+                <div class="scrollable-list">
+                  <div class="card-deck">
+      
+                    <app-course-card></app-course-card>
+                    <app-course-card></app-course-card>
+                    <app-course-card></app-course-card>
+                    <app-course-card></app-course-card>
+                    <app-course-card></app-course-card>
+                  </div>
+                </div>
+            </div>
+            <div *ngIf="selectedTab === 'bestseller'" class="tab-pane fade show active">
+            
+            <div class="scrollable-list">
+                <div class="card-deck">
+    
+                <app-course-card></app-course-card>
+                <app-course-card></app-course-card>
+                <app-course-card></app-course-card>
+                <app-course-card></app-course-card>
+                <app-course-card></app-course-card>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+img{
+    height:200px;
+    width:200px;
+    
+}
+.tools{
+    padding-block: min(5vw,3rem);
+}
+
+.custom-card{
+    border-radius: 14px;
+}

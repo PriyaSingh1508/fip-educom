@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "categoryName":"Python",
+        "items":[{"name":"Learn Python","url":"#"},{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"}]
+    }, {
+        "id":2,
+        "categoryName":"Java Technologies",
+        "items":[{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"}]
+    }, {
+        "id":3,
+        "categoryName":"Java Technologies",
+        "items":[{"name":"AWS","url":"#"},{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"}]
+    },
+    {
+        "id":4,
+        "categoryName":"Java Technologies",
+        "items":[{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"},{"name":"Learn Java","url":"#"}]
+    }
+]

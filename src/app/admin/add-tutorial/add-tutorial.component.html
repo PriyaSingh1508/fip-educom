@@ -1,0 +1,59 @@
+<div>
+    <mat-card class="text-center p-4">
+     
+        <div class="mb-2">
+            <p class="fs-3 fw-bold">
+              
+                {{ isEditMode ? 'Edit Tutorial' : '  Add Tutorial' }}
+            </p>
+        </div>
+            <mat-card-content>
+                <form [formGroup]="formData">
+                 <div class="row">
+                    <div class="col-md-6">
+                        <mat-form-field>
+                            <mat-select formControlName="TechnologyId" placeholder="Technology Name" [(ngModel)]="tutorial.technologyId" (valueChange)="getCategories($event)" aria-placeholder="Select Tutorial">
+                                <mat-option
+                                *ngFor="let technology of technologies"
+                                [value]="technology.id"
+                                [attr.data-state-name]="technology.id"
+                                >{{ technology.technologyName }}
+                              </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-6">
+                        <mat-form-field>
+                            <mat-select formControlName="TutorialCategoryId" placeholder="Category Name"   aria-placeholder="Select Category" [(ngModel)]="tutorial.tutorialCategoryId">
+                                <mat-option
+                                *ngFor="let category of categories"
+                                [value]="category.id"
+                                [attr.data-state-name]="category.id"
+                              
+                                >{{ category.tutorialCategoryName }}
+                              </mat-option>
+                              </mat-select>
+                          </mat-form-field>
+                    </div>
+                 </div>
+                        
+                      
+                   
+                      <mat-form-field>
+                        <input matInput placeholder="Tutorial Item Name" formControlName="Topic" [(ngModel)]="tutorial.topic">
+                      </mat-form-field>
+                    
+                  
+                    <label for="data"><strong>Description</strong></label>
+                    <ckeditor [editor]="Editor" id="data" formControlName="Description" [(ngModel)]="tutorial.description" data="<p>Hello, world!</p>"></ckeditor>
+
+                  
+                    <button mat-raised-button color="primary" type="submit" *ngIf="!isEditMode" (click)="onSubmit()">Submit</button>
+                    <button mat-raised-button color="primary" type="submit" *ngIf="isEditMode" (click)="onEdit()">Save Changes</button>
+                  </form>
+
+            </mat-card-content>
+     </mat-card>
+  
+
+</div>

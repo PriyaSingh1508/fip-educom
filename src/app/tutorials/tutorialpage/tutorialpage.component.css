@@ -1,0 +1,9 @@
+.btn-secondary{
+    background-color: #04af2f;
+}
+
+.btn-secondary:disabled{
+    background-color: #eeeeee;
+    color: black;
+}
+

@@ -1,0 +1,54 @@
+[
+    {
+        "categoryId":1,
+        "itemId":1,
+        "heading":"HTML Intro",
+        "text":"HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages. Hypertext refers to the way in which Web pages (HTML documents) are linked together. Thus, the link available on a webpage is called Hypertext.As its name suggests, HTML is a Markup Language which means you use HTML to simply `mark-up` a text document with tags that tell a Web browser how to structure it to display."
+    },
+    {
+        "categoryId":1,
+        "itemId":2,
+        "heading":"HTML Overview",
+        "text":"Overview"
+    }
+    ,
+    {
+        "categoryId":1,
+        "itemId":3,
+        "heading":"HTML Basic",
+        "text":"Basic"
+    }
+    ,
+    {
+        "categoryId":1,
+        "itemId":4,
+        "heading":"HTML Elements",
+        "text":"Elements"
+    }
+    ,
+    {
+        "categoryId":1,
+        "itemId":5,
+        "heading":"HTML Attributes",
+        "text":"Attributes"
+    },
+    {
+        "categoryId":2,
+        "itemId":1,
+        "heading":"HTML Tag",
+        "text":"Teg"
+    },
+    {
+        "categoryId":2,
+        "itemId":2,
+        "heading":"HTML Intro",
+        "text":"Attributes"
+    }
+    ,
+    {
+        "categoryId":2,
+        "itemId":3,
+        "heading":"HTML Intro",
+        "text":"Overview"
+    }
+   ]

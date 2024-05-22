@@ -1,0 +1,28 @@
+[
+{
+  "id":1,
+  "firstName": "Pratham",
+  "lastName":"Wadhwa",
+  "email":"user123@mail.com",
+  "password":"Admin@123",
+  "mobileNumber":"987203410",
+  "dateOfBirth": "2020-07-30T18:00:00.000Z",
+  "gender": "Male", 
+  "acceptTerms": true,
+  "addresses": {"city":"Firozpur","state":"Punjab","country":"India","zipcode":"152002","address":"PratapGarh"},
+  "role":"student"
+},{
+  "id":2,
+  "firstName": "Pratham",
+  "lastName":"Wadhwa",
+  "email":"user123@mail.com",
+  "password":"Admin@123",
+  "mobileNumber":"987203410",
+  "dateOfBirth": "2020-07-30T18:00:00.000Z",
+  "gender": "Male", 
+  "acceptTerms": true,
+  "addresses": {"city":"Firozpur","state":"Punjab","country":"India","zipcode":"152002","address":"PratapGarh"},
+  "role":"student"
+}
+
+]

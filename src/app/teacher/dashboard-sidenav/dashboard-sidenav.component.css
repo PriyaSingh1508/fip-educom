@@ -1,0 +1,22 @@
+mat-sidenav>ul{margin-top: 2px;display: flex;}
+ul>li{
+    border: 1px solid rgb(118, 108, 108);
+    list-style: none;
+    border-radius: 2px;
+    flex-direction: column;
+    margin:1px;
+    z-index: 1;
+    color: white;
+}
+ul>li>a{
+    display: block;
+    margin-left: 15px;
+    color:white;
+    text-decoration: none;
+}
+mat-sidenav{
+    background-color: #26282B;
+}
+mat-sidenav-container{
+    height: 90vh;
+}

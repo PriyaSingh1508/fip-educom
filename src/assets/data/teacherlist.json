@@ -1,0 +1,4 @@
+[
+    {"id":1, "firstName":"John","lastName":"Doe","email":"john@gmail.com","gender":"male","password":"Test@123","mobileNumber":"+918218426686"},
+    {"id":2, "firstName":"Divya","lastName":"Tyagi","email":"john@gmail.com","gender":"female","password":"Test@123","mobileNumber":"+918218426686"}
+    ]

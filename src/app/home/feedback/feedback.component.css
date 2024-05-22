@@ -1,0 +1,23 @@
+.card-text-container {
+  
+    justify-content: center;
+    height: 100%;
+    padding-top: 10%;
+  }
+  .logos{
+    overflow: hidden;
+    padding:60px 0px;
+  }
+  @keyframes slide{
+    from{ transform:translateX(0);}
+    to{transform: translateX(-100%);}
+  }
+  .logos-slide{
+    white-space: nowrap;
+    animation: 8s slide infinite linear;
+  }
+  .logos-slide img{
+    filter:grayscale(100%);
+    height:50px;
+    margin: 0px 40px;
+  }

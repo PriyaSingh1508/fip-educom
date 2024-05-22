@@ -1,0 +1,24 @@
+{
+  "name":"HTML",
+    "image":"https://www.tutorialspoint.com/images/trending_categories.svg",
+    "item":[
+    {
+      "categoryId":1,
+      "categoryName":"Trending Categories",
+      "categoryItem":[
+        {"itemId":1,"title":"Data Structure"},
+        {"itemId":2,"title":"Networking"}
+    
+      ]
+    },
+    {
+        "categoryId":2,
+        "categoryName":"Selected Reading",
+        "categoryItem":[
+          {"itemId":1,"title":"UPSC IAS Exam Notes"},
+          {"itemId":2,"title":"Developer's Best Practices"}
+        ]
+    }
+]
+
+}

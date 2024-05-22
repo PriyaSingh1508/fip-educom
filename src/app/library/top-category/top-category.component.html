@@ -1,0 +1,35 @@
+
+<section class="p-4 p-md-5 text-center text-lg-start shadow-1-strong" style="
+    background-color:#E4FFE5;
+  "> 
+  
+
+<div class="row p-4"><div class=" col-6 " style="font-size: 40px; font-weight: bold;">Top <span style="color:#04AF2F">Categories</span></div> <div class="col-6 float-end"><button class="btn btn-lg" style="color:#ffffff;background-color: #04AF2F;">See All</button>
+    <div class="swiper-button-prev " style="color:#04AF2F"></div>
+    <div class="swiper-button-next " style="color:#04AF2F"></div>
+</div></div>
+  
+<div class="swipe">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide" *ngFor="let category of categories" (click)="displayData()"><app-category-card [categoryName]="category.name" [imageUrl]="category.imageUrl" [id]="category.id" (showDataEvent)="getEventData($event)"></app-category-card>
+       </div>
+      
+    </div>
+</div>
+   
+  
+    <!-- If we need navigation buttons -->
+   
+  
+    <!-- If we need scrollbar -->
+    
+
+</section>
+<div class="empty">
+    <div class="row" *ngFor="let content of categoryContent">
+        {{content.text}}
+    
+    </div>
+    </div>

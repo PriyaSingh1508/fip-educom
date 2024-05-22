@@ -1,0 +1,8 @@
+::ng-deep ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  ::ng-deep ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+

@@ -1,0 +1,45 @@
+mat-card {
+    width: 90%;
+    margin: 2em auto;
+    text-align: center;
+  }
+  
+  mat-form-field {
+    display: block;
+    margin: auto
+  }
+  label {
+    display: block; 
+    text-align: left; 
+}
+/* .add{
+    margin-left:10px;
+  } */
+  .category-input {
+    display: flex;
+  }
+
+  .varButton {
+    width:6rem !important
+  }
+
+
+  :host ::ng-deep .mat-mdc-paginator-range-label {
+    display: none !important;
+}
+
+
+
+:host ::ng-deep .mat-mdc-paginator-navigation-next::after {
+  content: 'Next';
+  font-size: x-small;
+}
+
+:host ::ng-deep .mat-mdc-paginator-navigation-previous::after {
+  content: 'Prev';
+  font-size: x-small;
+}
+
+/* :host ::ng-deep .mat-mdc-paginator-icon {
+  display: none;
+} */

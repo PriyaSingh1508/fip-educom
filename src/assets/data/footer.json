@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "About Us",
+    "items": [
+      {
+        "itemId": 1,
+        "name": "Company"
+      },
+      {
+        "itemId": 2,
+        "name": "Our Team"
+      },
+      {
+        "itemId": 3,
+        "name": "Career"
+      },
+      {
+        "itemId": 4,
+        "name": "Jobs"
+      },
+      {
+        "itemId": 5,
+        "name": "Become A Teacher"
+      },
+      {
+        "itemId": 6,
+        "name": "Affliates"
+      },
+      {
+        "itemId": 7,
+        "name": "Contact Us"
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "title": "Terms",
+    "items": [
+      {
+        "itemId": 1,
+        "name": "Terms Of use"
+      },
+      {
+        "itemId": 2,
+        "name": "Privacy Policy"
+      },
+      {
+        "itemId": 3,
+        "name": "Refund Policy"
+      },
+      {
+        "itemId": 4,
+        "name": "Cookies Policy"
+      },
+      {
+        "itemId": 5,
+        "name": "FAQ's"
+      }
+    ]
+  },
+
+  {
+    "id": 3,
+    "title": "Our Products",
+    "items": [
+      {
+        "itemId": 1,
+        "name": "Free Library "
+      },
+      {
+        "itemId": 2,
+        "name": "Articles"
+      },
+      {
+        "itemId": 3,
+        "name": "Coding Ground"
+      },
+      {
+        "itemId": 4,
+        "name": "Certifications"
+      },
+      {
+        "itemId": 5,
+        "name": "Courses"
+      },
+      {
+        "itemId": 6,
+        "name": "eBooks"
+      },
+      {
+        "itemId": 7,
+        "name": "Corporate Training "
+      },
+      {
+        "itemId": 8,
+        "name": "Free Web Graphics"
+      }
+    ]
+  }
+]

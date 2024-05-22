@@ -1,0 +1,40 @@
+.container{
+    margin: 0;
+}
+.trending-categories {
+    margin-top: 0rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .trending-categories {
+        margin-top: 0rem;
+    }
+
+    .trending-categories li {
+        padding: 0.5rem;
+    }
+}
+
+.paginator-container {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0px;
+} 
+button {
+      margin: 4px;
+      border: 1px solid transparent;
+      background-color: #04af2f;
+      transition: background-color 0.3s;
+}
+button::hover {
+  background-color: #04af2f;
+}
+mat-icon {
+  color: white;
+}
+  

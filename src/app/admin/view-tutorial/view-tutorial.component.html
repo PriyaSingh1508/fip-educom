@@ -1,0 +1,43 @@
+<mat-form-field>
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Search the Tutorial" #input>
+  </mat-form-field>
+  
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  
+
+    <ng-container matColumnDef="tutorialCategoryId">
+      <th mat-header-cell *matHeaderCellDef><b> CategoryId</b> </th>
+      <td mat-cell *matCellDef="let element"> {{element.tutorialCategoryId}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="topic">
+      <th mat-header-cell *matHeaderCellDef> <b>Topic </b></th>
+      <td mat-cell *matCellDef="let element"> {{element.topic}} </td>
+    </ng-container>
+  
+    <!-- <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef> <b>Description </b></th>
+      <td mat-cell *matCellDef="let element"> <button class="my-2" mat-fab extended color="primary" (click)="openDialog(element)">View Description</button>
+      </td>
+    </ng-container> -->
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef><b> Actions</b> </th>
+      <td mat-cell *matCellDef="let element"><button mat-raised-button color="primary" *ngIf="!element.isPublished" (click)="OnPublish(element)">Publish</button><button *ngIf="element.isPublished" mat-raised-button color="accent">Approved</button>&nbsp; <button mat-raised-button color="warn" (click)="OnDelete(element)">Delete</button>
+        &nbsp; <button mat-raised-button color="primary" (click)="OnEdit(element)">Edit</button>  &nbsp; <button mat-raised-button color="primary" (click)="openDialog(element)">View</button></td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+    </tr>
+  </table>
+  <mat-paginator
+  [length]="totalItems"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="[2, 3, 5,10]"
+
+  (page)="pageChanged($event)"  class="custom-paginator" style="margin-top: 1px;">
+</mat-paginator>

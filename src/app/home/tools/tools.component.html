@@ -1,0 +1,29 @@
+<section class="tools" style="background-color: rgb(238,238,238);">
+    <div class="row mx-auto p-4"><div class="col-lg-10" ><h1>Most Popular <span style="color:rgb(4,175,47)">Tools</span></h1>
+      <p>Utilize the frequently used tools for your need</p></div>
+      
+    <div class="col-lg-2 align-items-left"><button class="btn btn-lg text-white" style="background-color:rgb(4,175,47)"> See all</button></div></div>
+  
+      
+  
+  
+  
+      <div class="row mx-3" >
+        
+        <div class="col-md-3 mb-4 mx-auto" *ngFor="let tool of tools">
+          <div class="card custom-card" >
+            <img src="{{tool.imageUrl}}" class="p-4 mx-auto" alt="Image 1">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{tool.name}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+    
+       
+   
+      
+    
+  </section>
+  

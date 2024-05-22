@@ -1,0 +1,89 @@
+<div>
+    
+
+
+      <mat-card class="text-center p-4">
+     
+        <div class="mb-2">
+            <p class="fs-3 fw-bold">
+                Add Technology
+            </p>
+        </div>
+            <mat-card-content>
+                <form [formGroup]="techForm" (ngSubmit)="onSubmit()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <mat-form-field>
+                                <mat-label>Technology Name</mat-label>
+                                <input matInput formControlName="technologyName" placeholder="Enter technology name">
+                                <mat-error *ngIf="TechnologyName.hasError('required') && (TechnologyName.touched || TechnologyName.dirty)">Technology Name is required</mat-error>
+                              </mat-form-field>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- <mat-form-field>
+                                <mat-label>Image URL</mat-label>
+                                <input matInput formControlName="imageUrl" placeholder="Enter image URL" [(ngModel)]="technology.imageUrl">
+                                <mat-error *ngIf="ImageUrl.hasError('required') && (ImageUrl.touched || ImageUrl.dirty)">Image URL is required</mat-error>
+                                
+                              </mat-form-field> -->
+                              
+                                <label for="fileInput" ></label>
+                                <input type="file" id="fileInput" formControlName="fileInput" (change)="onFileSelected($event)" required accept=".jpg, .png,.jpeg" >
+                            
+                        </div>
+                    </div>
+                    
+                 
+                    
+                 
+                    <button mat-raised-button color="primary" type="submit" [disabled]="techForm.invalid">Submit</button>
+                  </form>
+
+            </mat-card-content>
+     </mat-card>
+  
+</div>
+<div style="text-align: center;height: 88vh;">
+
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef><b> No. </b></th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+    
+      <!-- Name Column -->
+      <ng-container matColumnDef="technologyName">
+        <th mat-header-cell *matHeaderCellDef> <b>Technology Name</b> </th>
+        <td mat-cell *matCellDef="let element"> {{element.technologyName}} </td>
+      </ng-container>
+    
+      
+      <ng-container matColumnDef="imageUrl">
+        <th mat-header-cell *matHeaderCellDef><b> Image Path </b></th>
+        <td mat-cell *matCellDef="let element"> {{element.imageUrl}} </td>
+      </ng-container>
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef><b> Actions</b> </th>
+        <td mat-cell *matCellDef="let element"><button mat-raised-button color="primary" *ngIf="!element.isPublished" (click)="onPublish(element)">Publish</button><button *ngIf="element.isPublished" mat-raised-button color="accent">Approved</button>&nbsp; <button mat-raised-button color="warn" (click)="onDelete(element)">Delete</button></td>
+      </ng-container>
+    
+     
+      
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator
+  [length]="totalItems"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="[2, 3, 5,10]"
+
+  (page)="pageChanged($event)"  class="custom-paginator" style="margin-top: 1px;">
+</mat-paginator>
+    
+    
+    
+    
+ </div>

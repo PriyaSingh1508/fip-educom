@@ -1,0 +1,117 @@
+<section style="background-image:url('assets/images/dotsbg.png'); background-repeat: no-repeat; background-position: 100%; background-color: #ffffff;">
+    <div class="container p-4">
+      <h1 style="font-size: xx-large;">Our Students work<br>with the
+      <span style="color:rgb(4,175,47)">Best</span></h1>
+  
+    </div>
+    <div class="logos">
+      <div class="logos-slide">
+        <img class="" src="assets/images/adobe.png" alt="wipro logo">
+        <img class="" src="assets/images/inetel.png" alt="wipro logo">
+        <img class="" src="assets/images/ibm.png" alt="wipro logo">
+        <img class="" src="assets/images/hdfcbank.png" alt="wipro logo">
+        <img class="" src="assets/images/capegemini.png" alt="wipro logo">
+        <img class="" src="assets/images/bosch.png" alt="wipro logo">
+        <img class="" src="assets/images/armani.jpg" alt="wipro logo">
+        <img class="" src="assets/images/apple.png" alt="wipro logo">
+        <img class="" src="assets/images/adp.png" alt="wipro logo">
+        <img class="" src="assets/images/cisco.png" alt="wipro logo">
+      </div>
+    </div>
+  </section>
+<section class="p-4 p-md-5 text-center text-lg-start shadow-1-strong rounded" style="
+    background-color:rgb(207,233,208);
+  "> 
+  <div class="p-4" style="font-size: xx-large;">Feedbacks</div>
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide" *ngFor="let feedback of feedbacks">
+        <div class="card">
+        <div class="card-body m-3">
+          <div class="row">
+            <div class="col-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+              <img src="assets/images/default.png"
+                class="rounded-circle img-fluid shadow-1" alt="avatar" width="100" height="100" />
+            </div>
+            <div class="col-lg-8 justify-content-center pd-5">
+                
+                <p class="fw-bold lead mb-2" style="font-size:x-large"><strong>{{feedback.name}}</strong></p>
+                <p class="fw-bold text-muted mb-0">{{feedback.course}}</p>
+              </div>
+              <div class="col-lg-2 d-flex">
+                <i class='bx bxs-quote-right' style="color:rgb(48,155,52);font-size: xx-large;"></i>
+              </div>
+            <p class="text-muted fw-light mb-4">
+               {{feedback.feedback}}
+              </p>
+          </div>
+        </div>
+      </div></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  </section>
+  <section class="">
+    <div class="row mx-auto p-4">
+    
+        
+        <div class="col-md-6">
+          <div class="card" style="background-color: rgb(191,228,245);">
+            <div class="row no-gutters">
+    
+              
+              <div class="col-md-7"  >
+                <div class="card-body " >
+                    <div class="card-text-container">
+                  <h5 class="card-title" style="font-size: x-large;">Annual Membership</h5>
+                  <p class="card-text">Become a valued member of Tutorials Point and enjoy unlimited access to our vast library of top-rated Video Courses</p>
+                  <a href="#" class="btn" style="background-color: rgb(1,150,218);color: white;"><i class='bx bxs-hand-up'></i>Subscribe Now</a>
+                </div></div>
+              </div>
+    
+              
+              <div class="col-md-5">
+                <img src="assets/images/annual-membership.jpg" class="card-img" alt="Card 1 Image">
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        
+        <div class="col-md-6">
+          <div class="card" style="background-color: rgb(252,219,196);">
+            <div class="row no-gutters">
+    
+              
+              <div class="col-md-7"  >
+                <div class="card-body" >
+                    <div class="card-text-container">
+                  <h5 class="card-title" style="font-size: x-large;">Online Certifications</h5>
+                  <p class="card-text">Master prominent technologies at full length and become a valued certified professional.</p>
+                  <a href="#" class="btn btn" style="background-color: rgb(244,111,20);color:white"><i class='bx bx-check'></i>Explore Now!</a>
+                </div></div>
+              </div>
+    
+              
+              <div class="col-md-5">
+                <img src="assets/images/traning-for-a-team.jpg" class="card-img" alt="Card 2 Image">
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>

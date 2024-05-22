@@ -1,0 +1,10 @@
+h5:hover{
+    color: #04AF2F;
+
+}
+.card:hover{
+    border-color: #04AF2F;
+}
+.card{
+    background-color: #ffffff;
+}

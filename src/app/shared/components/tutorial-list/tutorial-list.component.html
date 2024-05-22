@@ -1,0 +1,23 @@
+<div>
+    <input type="text" class="form-input" placeholder="Search in the list item" [(ngModel)]="searchTerm" />
+</div>
+  
+  <div class="card" style="width: 100%;">
+    <img [src]="tutorial.imageUrl" class="card-img-top" alt="..." />
+    <div *ngFor="let item of tutorial.categories| searchFilter:searchTerm">
+      <div class="category-name">{{ item?.categoryName }}</div>
+      <ul class="list-group">
+        <li class="list-group-item py-3" *ngFor="let list_item of item?.categoryItems">
+          <a class="list-item" (click)="emitItemDetails(list_item?.topic, list_item?.description)">
+            {{ list_item?.topic }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+
+
+
+
+  

@@ -1,0 +1,100 @@
+[
+    {
+      "title": "Latest Technologies",
+      "technologies": [
+        { "name": "Bitcoin Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/bitcoin-tutorial" },
+        { "name": "Blockchain","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/blockchain-tutorial" },
+        { "name": "Blue Prism","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/blue-prism" },
+        { "name": "Ethereum Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/ethereum-tutorial" },
+        { "name": "Python Blockchain","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/python-blockchain" }
+      ]
+    },
+    {
+      "title": "Computer Science",
+      "technologies": [
+        { "name": "Computer Fundamentals","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/computer-fundamentals" },
+        { "name": "Compiler Design","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/compiler-design" },
+        { "name": "Operating System","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/operating-system" },
+        { "name": "Data Structure","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/data-structure" },
+        { "name": "DBMS Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/dbms-tutorial" }
+      ]
+    }, {
+      "title": "Machine Learning",
+      "technologies": [
+        { "name": "Machine Learning","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/computer-fundamentals" },
+        { "name": "TensorFlow Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/compiler-design" },
+        { "name": "ML with Python","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/operating-system" },
+        { "name": "AI with Python","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/data-structure" },
+        { "name": "Time Series","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/dbms-tutorial" }
+      ]
+    }, {
+      "title": "Web Development",
+      "technologies": [
+        { "name": "HTML Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/computer-fundamentals" },
+        { "name": "CSS Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/compiler-design" },
+        { "name": "JavaScript Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/operating-system" },
+        { "name": "Php Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/data-structure" },
+        { "name": "Angular4 Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/dbms-tutorial" }
+      ]
+    },
+    {
+      "title": "Programming Tutorials",
+      "technologies": [
+        { "name": "HTML Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/computer-fundamentals" },
+        { "name": "C++ Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/compiler-design" },
+        { "name": "Java8 Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/operating-system" },
+        { "name": "Python Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/data-structure" },
+        { "name": "Scala Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/dbms-tutorial" }
+      ]
+    },
+    {
+      "title": "Java Technologies",
+      "technologies": [
+        { "name": "Java8 Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/computer-fundamentals" },
+        { "name": "JDBC Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/compiler-design" },
+        { "name": "Swing Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/operating-system" },
+        { "name": "Servlets Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/data-structure" },
+        { "name": "Spring Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/dbms-tutorial" }
+      ]
+    },
+    {
+      "title": "Mobile App Development",
+      "technologies": [
+        { "name": "Android Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/computer-fundamentals" },
+        { "name": "Swift Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/compiler-design" },
+        { "name": "IOS Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/operating-system" },
+        { "name": "Kotlin Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/data-structure" },
+        { "name": "Xamarian Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/dbms-tutorial" }
+      ]
+    },
+    {
+      "title": "Database Tutorials",
+      "technologies": [
+        { "name": "Mongo DB Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/computer-fundamentals" },
+        { "name": "PL/SQL Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/compiler-design" },
+        { "name": "SQL Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/operating-system" },
+        { "name": "DB2 Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/data-structure" },
+        { "name": "MySQL Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/dbms-tutorial" }
+      ]
+    },
+    {
+      "title": "Microsoft Technologies",
+      "technologies": [
+        { "name": "ASP.NET","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/computer-fundamentals" },
+        { "name": "Entity Framework","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/compiler-design" },
+        { "name": "VB.NET Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/operating-system" },
+        { "name": "Microsoft Project","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/data-structure" },
+        { "name": "Microsoft Excel","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/dbms-tutorial" }
+      ]
+    },
+    {
+      "title": "Big Data and Analytics",
+      "technologies": [
+        { "name": "Big Data Analytics","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/computer-fundamentals" },
+        { "name": "Hadoop Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/compiler-design" },
+        { "name": "SAS Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg", "link": "/operating-system" },
+        { "name": "QlikView Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/data-structure" },
+        { "name": "Power Bi Tutorial","imageUrl":"https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" ,"link": "/dbms-tutorial" }
+      ]
+    }
+  ]

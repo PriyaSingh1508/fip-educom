@@ -1,0 +1,136 @@
+<div class="container-fluid">
+  
+<form [formGroup]="teacherLoginForm" (ngSubmit)="onSubmit()"  #myform="ngForm">
+  <h4 style="text-align: center;">Login</h4>
+    <div class="row">
+    <mat-form-field class="col-md-4" >
+      <input matInput placeholder="First Name" value="Hero" id="firstName" name="firstName" formControlName="firstName" type="text">
+      <mat-error *ngIf="teacherLoginForm.get('firstName')?.hasError('required')&& myform.submitted">
+        First Name is Required!
+      </mat-error>
+      <mat-error *ngIf="teacherLoginForm.get('firstName')?.hasError('maxlength')">
+        First Name cannot exceed 50 characters
+      </mat-error>
+    </mat-form-field>
+  
+    <mat-form-field class="col-md-4" >
+        <input matInput placeholder="Last Name" value="Savior" id="lastname" name="lastname" formControlName="lastName" type="text">
+        <mat-error *ngIf="teacherLoginForm.get('lastName')?.hasError('required')">
+          Last Name is Required!
+        </mat-error>
+        <mat-error *ngIf="teacherLoginForm.get('lastName')?.hasError('maxlength')">
+          Last Name cannot exceed 50 characters
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="col-md-4">
+        <input type="tel" matInput placeholder="Mobile Number" formControlName="mobileNumber">
+        <mat-error *ngIf="teacherLoginForm.get('mobileNumber')?.hasError('required')">
+          Mobile number is required
+        </mat-error>
+        <mat-error *ngIf="teacherLoginForm.get('mobileNumber')?.hasError('pattern')">
+          Mobile number must be 10 digits
+        </mat-error>
+      </mat-form-field>
+  </div>
+   <div class="row">
+    <mat-form-field class="col-md-4" >
+        <input matInput placeholder="Email" value="abc@gmail.com" id="email" name="email" formControlName="email" type="email">
+        <mat-error *ngIf="teacherLoginForm.get('email')?.hasError('pattern')">
+          Email is invalid
+        </mat-error>
+        <mat-error *ngIf="teacherLoginForm.get('email')?.hasError('required')">
+          Email is required
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="col-md-4" >
+        <input matInput placeholder="Password" id="password" name="password" formControlName="password" type="password">
+        <mat-error *ngIf="teacherLoginForm.get('password')?.hasError('required')">
+         Password is required
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="col-md-4" >
+        <input matInput placeholder="Confirm Password"  id="cPassword" name="cPassword" formControlName="cPassword" type="password">
+        <mat-error *ngIf="teacherLoginForm.get('cPassword')?.hasError('required')">
+          Password is required
+        </mat-error>
+        <mat-error *ngIf="teacherLoginForm.hasError('passwordMismatch', 'cPassword')">
+          Passwords do not match
+        </mat-error>
+    </mat-form-field>
+    <div class="row">
+        <div class="col-md-4" >
+        <label>Gender: </label>
+        <mat-radio-group formControlName="gender">
+          <mat-radio-button value="male">Male</mat-radio-button>
+          <mat-radio-button value="female">Female</mat-radio-button>
+        </mat-radio-group>
+       </div>
+       <div class="col-md-4">
+        <mat-checkbox formControlName="policyAgreement">I agree to Terms & Conditions</mat-checkbox>
+       </div>
+       <mat-form-field class="col-md-4" >
+        <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker" placeholder="dob" formControlName="dob" readonly >
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      
+    </div>
+  
+
+    <div formArrayName="addresses">
+      <div *ngFor="let tempAddForm of addresses.controls; let i = index" [formGroupName]="i">
+        <div class="row">
+          <mat-form-field class="col-md-4">
+            <mat-label>Country</mat-label>
+            <mat-select formControlName="country" (selectionChange)="selectCountry($event.value,i)">
+              <mat-option *ngFor="let country of countries" [value]="country.id">
+                {{ country.name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="col-md-4">
+            <mat-label>State</mat-label>
+            <mat-select formControlName="state" (selectionChange)="selectState($event.value,i)">
+              <mat-option *ngFor="let state of tempAddForm.get('states')?.value" [value]="state.id">
+                {{ state.statename }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="col-md-4">
+            <mat-label>City</mat-label>
+            
+            <input type="text" matInput formControlName="city" [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+              <mat-option *ngFor="let option of filteredOptions[i] | async" [value]="option.cityName">
+                {{ option.cityName }}
+              </mat-option>
+            </mat-autocomplete>
+            
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <mat-form-field appearance="fill" class="col-md-4">
+            <input matInput formControlName="street" placeholder="Street">
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="col-md-4">
+            <input matInput formControlName="zipCode" placeholder="Zip Code">
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+    <button mat-raised-button (click)="addTempAdd()" style="margin-left: 15px; margin-bottom:5px; border-style: none;width: 10px;"
+      color="accent">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+        <path
+          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+      </svg>
+    </button>
+  </div>
+  <button mat-raised-button type="submit" color="primary" >Submit</button>
+ 
+  </form>
+
+</div>

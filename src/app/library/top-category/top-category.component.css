@@ -1,0 +1,15 @@
+.swiper-button-prev {
+    position: absolute;
+    top: 40%;
+    left: 0;
+  }
+  
+  .swiper-button-next {
+    position: absolute;
+    top: 40%;
+    right: 0;
+  }
+  .empty{
+    padding: 150px;
+    background-color: #fff;
+  }

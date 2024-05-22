@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="text-center">
+    <div class="row">
+      <div class="head-size fw-bold">Tutorials <span id="heading-element">Library</span></div>
+    </div>
+    
+    <div class="row"><span>Master any technology with our largest free online Library</span></div>
+  </div>
+  
+<div class="row">
+  
+
+ 
+  <div *ngFor="let card of paginatedTutorials" class="col-md-6 card m-3 shadow-sm" style="width: 45%;">
+    <div class="d-flex justify-content-between  pt-4">
+      <h5 class="card-title">{{ card.title }}</h5>
+      <button class="btn btn-success">See All</button>
+    </div>
+    <div class="card-container">
+      <ul class="d-flex justify-content-around p-2 ">
+        <li *ngFor="let technology of card.technologies" class="list-group-item p-2">
+          
+          <img [src]="technology.imageUrl" alt="{{ technology.name }}" width="40px" height="40px" class="me-2">
+          <p>{{ technology.name.split(' ')[0] }}<br/>
+          {{ technology.name.split(' ').slice(1).join(' ') }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+ 
+</div>
+<div class="paginator-container justify-content-around ">
+  <button class="scroll-arrows left-arrow" (click)="onPreviousPage()" [disabled]="currentPage === 1"  >
+    <i class="fa-solid fa-angle-left"></i>
+  </button>
+
+  <button class="scroll-arrows right-arrow" (click)="onNextPage()" [disabled]="currentPage === totalPages" style="margin:4px;">
+    <i class="fa-solid fa-angle-right"></i>
+  </button>
+</div>
+</div>

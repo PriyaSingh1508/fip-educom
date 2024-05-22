@@ -1,0 +1,49 @@
+
+.category-name{
+    background-color: #2c9d30;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+    padding: 1.5rem;
+    padding-left: 1rem;
+}
+.list-item:hover{
+    background-color: #cfe9d0;
+    
+}
+.list-item:hover{
+    transition: .3s ease;
+    display: inline-block;
+    width: 100%;
+    border-radius: 100vmax;
+    padding: 0.3rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-item{
+    text-decoration-skip-ink: auto;
+    text-decoration: none;
+    color: currentColor;
+    cursor: pointer;
+}
+.list-item:hover::after, .list-item.active::after {
+    transform: translateX(0);
+    opacity: 1;
+}
+.list-item::after {
+    content: '';
+    background-image: url(https://www.tutorialspoint.com/static/images/arrowShort.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: .3s ease;
+}
+.tutorial-content{
+    border-radius: 20px;
+    margin-left: 2rem;
+}

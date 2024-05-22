@@ -1,0 +1,20 @@
+
+<div class="list-container mx-5">
+  <input
+  type="text"
+  class="form-control"
+  placeholder="Search Your Favourite Item"
+  [(ngModel)]="filterTerm"
+/> 
+    <div class="list-row rowsqa"  >
+      
+      <div class="featured-box col-md-3 mx-2 " *ngFor="let list of lists  | category:filterTerm">
+        <div >
+        <h4 class="heading p-2" style="border-top-left-radius: 15px;border-top-right-radius: 15px;">{{ list.categoryName }}</h4>
+        <ul class="list-group" style="list-style: none;" >
+          <li class="list-group-item"  *ngFor="let item of list.items" ><i class='bx bxs-circle' style="font-size: x-small; padding-right: 8%;"></i><span><a href="{{item.url}}" style="text-decoration: none; border-bottom:1px dotted #ccc;color:black;">{{ item.name}}</a></span></li>
+        </ul></div>
+      </div>
+     
+    </div>
+  </div>

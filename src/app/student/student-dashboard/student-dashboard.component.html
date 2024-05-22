@@ -1,0 +1,75 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button>
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+        Student Dashboard
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" opened="true">
+        <mat-nav-list>
+            <mat-list-item>
+                <button mat-button (click)="selectTab('dashboard')">Dashboard</button>
+            </mat-list-item>
+        </mat-nav-list>
+        <mat-nav-list>
+            <mat-list-item>
+                <button mat-button (click)="selectTab('courses')">Courses</button>
+            </mat-list-item>
+        </mat-nav-list><mat-nav-list>
+            <mat-list-item>
+                <button mat-button (click)="selectTab('certifications')">Certifications</button>
+            </mat-list-item>
+        </mat-nav-list>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="text-align: center;height: 88vh;" *ngIf="selectedTab==='dashboard'">
+          <app-student-list></app-student-list>
+
+
+<!-- <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" >
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> No. </th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+    
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.firstName}} {{element.lastName}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="email">
+    <th mat-header-cell *matHeaderCellDef> Email </th>
+    <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+  </ng-container>
+
+ 
+  <ng-container matColumnDef="mobilenumber">
+    <th mat-header-cell *matHeaderCellDef> Mobile Number </th>
+    <td mat-cell *matCellDef="let element"> {{element.mobileNumber}} </td>
+  </ng-container>
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef> Actions </th>
+    <td mat-cell *matCellDef="let element"> <button  mat-raised-button color=""> View</button> <button mat-raised-button color="primary">Edit</button> <button mat-raised-button color="warn" (click)="DeleteUser(element.id)">Delete</button> </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table> -->
+
+
+
+
+        </div>
+        <div style="text-align: center;height: 88vh;" *ngIf="selectedTab==='courses'">
+          COURSES
+        </div>
+        
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
